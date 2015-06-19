@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>JAJAJA</title>
+<script type="text/javascript">
+	function procesar(){
+		var dato = document.getElementById('nombre').value;
+		document.getElementById('frm').action ="http://127.0.0.1:3000/"+dato;
+	}
+</script>
+</head>
+<body>
+	<form action="" id ="frm" method="post">
+		<input type="text" name="nombre" id="nombre"/>
+		<button onclick="procesar();">ENVIAR</button>
+	</form>
+</body>
+</html>
